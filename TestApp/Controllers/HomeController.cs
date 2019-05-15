@@ -9,10 +9,10 @@ namespace TestApp.Controllers
 {
     public class HomeController : Controller
     {
-        public ObjectResult Index()
+        public ViewResult Index()
         {
             var employee = new Employee { ID = 1, Name = "Mark Upston" };
-            return new ObjectResult(employee);
+            return View(employee);
         }
     }
 }
